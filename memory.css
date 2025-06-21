@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.back-button {
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: rgb(255, 166, 0);
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+.back-button:hover {
+  color: rgb(255, 205, 113);
+}
+
+.memory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 100px;
+}
+
+.memory-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.memory-container em {
+  color: #fcb0ff;
+  font-style: italic;
+}
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 60px;
+  height: 60px;
+  background-color: #222;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.card.flipped {
+  background-color: #fff;
+}
+
+.fade-text {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  font-size: 1.5rem;
+  color: #ff80c0;
+  margin-top: 20px;
+}
+.fade-text.show {
+  opacity: 1;
+}
+.hidden {
+  display: none;
+}
