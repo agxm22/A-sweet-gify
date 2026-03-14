@@ -1,4 +1,4 @@
-const emojis = ['💖', '🫀', '💗', '💍', '🤍', '🌸', '⭐️, '💝'];
+const emojis = ['🤭', '😜', '💅🏻', '🙈', '🌸', '💐', '💕', '💘'];
 let cards = [...emojis, ...emojis].sort(() => 0.5 - Math.random());
 let flippedCards = [];
 let matchedPairs = 0;
@@ -44,4 +44,3 @@ gameGrid.addEventListener('click', (e) => {
     }, 800);
   }
 });
-
